@@ -6,7 +6,7 @@ import vercel from "solid-start-vercel";
 
 export default defineConfig(() => {
   return {
-    plugins: [solid({ ssr: false, adapter: vercel({ edge: false }) }), UnoCSS()],
+    plugins: [solid({ ssr: true, adapter: vercel({ edge: false }) }), UnoCSS()],
     ssr: {
       noExternal: ["@kobalte/core"],
     },
