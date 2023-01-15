@@ -8,7 +8,7 @@
     "lint": "eslint --fix \"**/*.{ts,tsx,js,jsx}\"",
     "push": "prisma db push",
     "postinstall": "prisma generate",
-    "postbuild": "cp node_modules/.pnpm/**/**/prisma/*engine*.node .vercel/output/functions/render.func/ && cp prisma/schema.prisma .vercel/output/functions/render.func/"
+    "postbuild": "cp node_modules/.pnpm/**/**/prisma/*engine*.node .vercel/output/functions/render.func/ && cp prisma/schema.prisma .vercel/output/functions/render.func/ && cp node_modules/.pnpm/**/**/prisma/*engine*.node .vercel/output/functions/api.func/ && cp prisma/schema.prisma .vercel/output/functions/api.func/"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
