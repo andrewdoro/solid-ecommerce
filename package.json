@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "solid-start dev",
-    "build": "solid-start build && pnpm postbuild",
+    "build": "solid-start build",
     "start": "solid-start start",
     "lint": "eslint --fix \"**/*.{ts,tsx,js,jsx}\"",
     "push": "prisma db push",
@@ -43,7 +43,7 @@
     "clsx": "^1.2.1",
     "solid-heroicons": "^3.1.1",
     "solid-js": "^1.5.7",
-    "solid-start": "^0.2.11",
+    "solid-start": "^0.2.13",
     "solid-start-trpc": "^0.0.16",
     "solid-trpc": "^0.1.0-ssr.1",
     "ts-node": "^10.9.1",
