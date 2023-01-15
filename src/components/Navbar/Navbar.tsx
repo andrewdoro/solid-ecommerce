@@ -46,12 +46,12 @@ const Navbar = () => {
         <ThemeSelector />
         <Switch
           fallback={
-            <Button
+            <Button.Root
               onPress={signIn}
               class='flex gap-1 items-center py-2 px-4 dark:bg-neutral-800 bg-neutral-200 font-semibold rounded-full'>
               Login
               <Icon path={chevronRight} class='h-4 w-4' />
-            </Button>
+            </Button.Root>
           }>
           <Match when={session.loading}>
             <div class='w-8 h-8 bg-gray-200 rounded-full' />
